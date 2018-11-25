@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Enter app id to start getting reviews
+  form(action="/reviews" method="GET")
+    p App ID:
+      input(type="text" name="appId" placeholder="")
+    input(type="submit")
